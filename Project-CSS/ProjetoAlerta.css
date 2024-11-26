@@ -1,5 +1,86 @@
+:root { /*cores acessíveis de forma fácil em td css*/
+    --base-variante: #676767; 
+    --text-color: #000000; 
+    --cinza-true: #232323; /* Cor cinza pro modo escuro */
+    --branco-true: #FFFFFF; /* Cor branca pro modo escuro */
+    --amarelo-main: #f5da17; /* Cor amarela principal */
+    --amarelo-hover: #FFC300; /* Cor amarela do hover */
+}
+
+/* Estilos geral */
+body {
+    background-color: var(--base-variante);
+    color: var(--text-color);
+}
+
+/* Estilos pro modo escuro */
+body.dark-mode {
+    background-color: var(--cinza-true);
+    color: var(--branco-true);
+    transition: all 0.3s;
+}
+
+/* Estilos pra seção "Nossas Atividades" */
+.activities-section {
+    color: var(--text-color); /* Cor do texto padrão */
+}
+
+body.dark-mode .activities-section {
+    color: var(--branco-true); /* Cor do texto clara pro modo escuro */
+}
+
+body.dark-mode .activity-card {
+    background: var(--base-variante); /* Cor de fundo branca para os cards de atividades no modo escuro */
+    color:var(--text-color); /* Cor do texto clara para os cards de atividades */
+}
+
+body.dark-mode .activity-card h3,
+body.dark-mode .activity-card p {
+    color: var(--preto-true); /* Garantir que o texto dos títulos e parágrafos seja preto */
+}
+
+/* section estilizada */
+.testimonials-section {
+    color: var(--text-color);
+}
+
+body.dark-mode .testimonials-section {
+    color: var(--branco-true); /* Cor do texto clara para o modo escuro */
+}
+
+body.dark-mode .testimonial-card {
+    background:var(--base-variante); /* Cor de fundo amarela para os cards de depoimentos */
+    color: var(--preto-true); /* Cor do texto escura para os cards de depoimentos */
+    border: 1px solid var(--branco-true); /* Borda clara p os cards */
+}
+
+body.dark-mode .testimonial-card h3,
+body.dark-mode .testimonial-card p {
+    color: var(--preto-true); /* ganrantindo q os titulos e os parágrafos fiquem pretos*/
+}
+/*botão dark mode estilizado*/
+.dark-mode-button { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0.5rem 1rem;
+    background-color: var(--amarelo-main);
+    color: var(--preto-text);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+/*muda de cor se passar o mouse em cima do bottão darkmode*/
+.dark-mode-button:hover {
+    background-color:var(--base-variante);/*cor padrão branca (altera do amarelo pro branco)*/
+}
+
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     --amarelo-main: #f5da17;
@@ -21,6 +102,7 @@ body {
     background-color: var(--branco);
     color: var(--preto-text);
     overflow-x: hidden;
+    transition: all 0.3s;
 }
 
 /* Início Header Section */
@@ -42,6 +124,14 @@ body {
         width: 50px;
     }
 }
+
+.caixa-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
 .navigation-links{
     a{
         margin: 0px 10px;

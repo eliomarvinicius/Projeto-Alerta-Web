@@ -1,3 +1,69 @@
+:root { /*cores acessíveis de forma fácil em td css*/
+    --base-variante: #676767; 
+    --text-color: #000000; 
+    --cinza-true: #232323; /* Cor cinza pro modo escuro */
+    --branco-true: #FFFFFF; /* Cor branca pro modo escuro */
+    --amarelo-main: #f5da17; /* Cor amarela principal */
+    --amarelo-hover: #FFC300; /* Cor amarela do hover */
+}
+/* Estilos geral */
+body {
+    background-color: var(--base-variante);
+    color: var(--text-color);
+}
+
+/* Estilos pro modo escuro */
+body.dark-mode {
+    background-color: var(--cinza-true);
+    color: var(--branco-true);
+}
+
+/* Estilos pra seção "Nossas Atividades" */
+.activities-section {
+    color: var(--text-color); /* Cor do texto padrão */
+}
+
+body.dark-mode .about-us-biography {
+    color: var(---true); /* Cor do texto clara pro modo escuro */
+}
+/*botão dark mode estilizado*/
+.dark-mode-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--amarelo-main);
+    color: var(--preto-text);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+/* Estilo pro modo escuro */
+body.dark-mode {
+    background-color: var(--cinza-true);
+    color: var(--branco-true); /* Define a cor do texto como branco para todo o corpo */
+}
+
+/* Garante que todos os textos sejam brancos no modo escuro */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a {
+    color: var(--branco-true); /* Garante que todos os títulos, parágrafos, listas e links sejam brancos */
+}
+.dark-mode-button:hover {
+    background-color: var(--base-variante); /*trasintion do button darkmode do amarelo pro branco*/
+}
+
+body.dark-mode .about-us-biography {
+    background-color: #161515; /* Define como cinza o fundo do about-us no modo escuro */
+    color: var(--branco-true); /* Defina a cor do texto para branco */
+}
 *{
     margin: 0;
     padding: 0;
