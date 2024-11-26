@@ -44,7 +44,6 @@ body.dark-mode .associate-text{
     align-items: center;
     justify-content: center;
     padding: 0.5rem 1rem;
-    background-color: var(--amarelo-main);
     color: var(--preto-text);
     font-size: 1.1rem;
     font-weight: bold;

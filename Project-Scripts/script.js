@@ -1,7 +1,7 @@
 const body = document.body;
+
+
 const darkModeButton = document.querySelector('.dark-mode-button');
-
-
 
 // Verifica se o modo escuro está ativado no localStorage
 if (localStorage.getItem('darkMode') === 'true') {

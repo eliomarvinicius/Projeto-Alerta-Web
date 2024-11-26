@@ -63,9 +63,7 @@ body.dark-mode .testimonial-card p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
     padding: 0.5rem 1rem;
-    background-color: var(--amarelo-main);
     color: var(--preto-text);
     font-size: 1.1rem;
     font-weight: bold;
@@ -77,6 +75,10 @@ body.dark-mode .testimonial-card p {
 /*muda de cor se passar o mouse em cima do bottão darkmode*/
 .dark-mode-button:hover {
     background-color:var(--base-variante);/*cor padrão branca (altera do amarelo pro branco)*/
+}
+
+.dark-mode #lamp-amarela{
+    background-image: url(../assets/logo-instituto-amarela.png);
 }
 
 .caixa-logo{
@@ -174,9 +176,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
     z-index: -2;
-
     width: 100vw;
     height: 400px;
     position: absolute;
@@ -549,13 +549,11 @@ body {
 dialog {
     display: none; /* Esconde o pop-up inicialmente */
     position:fixed; /* Fixa o pop-up na tela */
-    top: 50%; /* Posiciona o pop-up no centro da tela */
-    left: 50%;
-    transform: translate(-20%, 60%); /* Ajusta para que o centro do pop-up fique no centro da tela */
-    z-index: 1000; /* Garante que o pop-up fique acima de outros elementos */
+    transform: translate(30%, 45%); 
+    
     max-width: 90%; /* Evita que o pop-up ocupe toda a tela em dispositivos móveis */
     max-height: 90%; /* Evita que o pop-up ocupe toda a tela em dispositivos móveis */
-    overflow: auto; /* Permite rolar o conteúdo se for maior que a tela */
+    
 }
 
 dialog[open] {
