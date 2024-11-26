@@ -53,18 +53,18 @@ body.dark-mode .activity-card p {
 }
 
 body.dark-mode .testimonials-section {
-    color: var(--branco-true); /* Cor do texto clara para o modo escuro */
+    color: var(--branco); /* Cor do texto clara para o modo escuro */
 }
 
 body.dark-mode .testimonial-card {
     background:var(--base-variante); /* Cor de fundo amarela para os cards de depoimentos */
-    color: var(--preto-true); /* Cor do texto escura para os cards de depoimentos */
+    color: var(--branco); /* Cor do texto escura para os cards de depoimentos */
     border: 1px solid var(--branco-true); /* Borda clara p os cards */
 }
 
 body.dark-mode .testimonial-card h3,
 body.dark-mode .testimonial-card p {
-    color: var(--branco); /* ganrantindo q os titulos e os parágrafos fiquem pretos*/
+    color: var(--preto-true); /* ganrantindo q os titulos e os parágrafos fiquem pretos*/
 }
 /*botão dark mode estilizado*/
 .dark-mode-button { 
