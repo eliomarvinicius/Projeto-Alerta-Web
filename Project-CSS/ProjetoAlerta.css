@@ -935,7 +935,7 @@ dialog[open] {
         position: fixed; /* Fixa o pop-up na tela */
         top: 50%; /* Posiciona o pop-up no centro da tela */
         left: 20%;
-        transform: translate(-140%, -50%); /* Ajusta para que o centro do pop-up fique no centro da tela */
+        transform: translate(-165%, -30%); /* Ajusta para que o centro do pop-up fique no centro da tela */
         z-index: 1000; /* Garante que o pop-up fique acima de outros elementos */
         max-width: 90%; /* Evita que o pop-up ocupe toda a tela em dispositivos móveis */
         max-height: 90%; /* Evita que o pop-up ocupe toda a tela em dispositivos móveis */
@@ -944,11 +944,13 @@ dialog[open] {
     
     #card1, #card2, #card3 {
         padding: 15px;
+        padding-right: 15px;
         position: fixed;
         top: 200px;
-        left: 550px;
-        width: 350px;
-        height: 285px;
+        left: 540px;
+        width: 300px;
+        height: 520px;
+        
     }
     /*Testimonials section*/
 
