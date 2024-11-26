@@ -51,3 +51,12 @@ menu.addEventListener('click', ()=>{
     menu.classList.toggle('ativo');
     navMenu.classList.toggle('ativo');
 })
+
+//função pop-up dos depoimentos
+
+function toggleText(idCaixa, idButao){
+    var dialog = document.getElementById(idCaixa)
+    var butaoClose = document.getElementById(idButao)
+    dialog.showModal()
+    butaoClose.addEventListener('click', () => dialog.close())
+}
